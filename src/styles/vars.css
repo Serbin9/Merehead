@@ -1,0 +1,10 @@
+:root {
+  --first-color: rgb(235, 235, 235);
+  --second-color: rgb(211, 218, 255);
+  --light-color: rgba(210, 223, 255, 0.78);
+  --dark-color: rgb(91, 91, 91);
+  --green-color: rgb(100, 133, 103);
+  --white-color: rgb(255, 255, 255);
+  --red-color: rgb(255, 5, 5);
+  --yellov-color: rgb(255, 167, 5);
+}

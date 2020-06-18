@@ -1,0 +1,151 @@
+@import "../../styles/vars.css";
+.section {
+  width: 100%;
+  min-width: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.create {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  min-width: 100px;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 20px;
+  border: 3px solid var(--green-color);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  text-transform: uppercase;
+  background: var(--white-color);
+  transform: translateX(-70%);
+  transition: all, 0.4s;
+  margin-bottom: 20px;
+}
+.create:hover {
+  transform: translateX(0);
+  background: var(--green-color);
+  color: var(--white-color);
+}
+.add {
+  margin: 0 10px;
+  border: 2px solid var(--green-color);
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  transition: all, 0.4s;
+}
+.create:hover .add {
+  background: var(--green-color);
+  border: 2px solid var(--white-color);
+  color: var(--white-color);
+}
+.list {
+  width: 100%;
+  min-width: 280px;
+  max-width: 924px;
+  min-height: 300px;
+  border-radius: 14px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid var(--light-color);
+  box-shadow: 4.5px 7.794px 10.5px var(--light-color);
+}
+.item {
+  width: 100%;
+  max-width: 280px;
+  /* height: 220px; */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  border-radius: 14px;
+  border: 1px solid var(--first-color);
+  box-shadow: 4.5px 7.794px 10.5px var(--light-color);
+}
+.fullName {
+  width: 100%;
+  word-wrap: none;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.desc {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 260px;
+  /* height: 100px; */
+  /* overflow-y: auto; */
+  word-wrap: break-word;
+  text-align: center;
+}
+.edit {
+  min-width: 100px;
+  height: 40px;
+  border-radius: 14px;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  background: var(--second-color);
+  transition: all, 0.4s;
+}
+.edit:hover {
+  background: var(--yellov-color);
+}
+.pagination {
+  margin-top: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page {
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  padding: 4px;
+  border: 2px solid var(--second-color);
+  text-transform: uppercase;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+.btn {
+  composes: page;
+  cursor: pointer;
+  transition: all, 0.4s;
+}
+.btn:hover {
+  border: 2px solid var(--green-color);
+  background: var(--green-color);
+  color: var(--white-color);
+}
+.disable {
+  composes: btn;
+  border: 2px solid var(--second-color);
+  background: var(--second-color);
+  color: var(--dark-color);
+  cursor: auto;
+}
+.disable:hover {
+  border: 2px solid var(--second-color);
+  background: var(--second-color);
+  cursor: auto;
+}
